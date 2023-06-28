@@ -1,0 +1,56 @@
+.menu-container {
+    position: relative;
+    background-color: blue;
+    height:50px;
+    height: 100vh;
+  }
+  
+  .hamburger-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+  }
+  
+  .hamburger-button span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background: #000;
+    margin-bottom: 5px;
+  }
+  
+  .menu {
+
+    display: block;
+    height: 7vh;
+    width: 00px;
+    position: absolute;
+    transition: all 0.3s ease;
+    display: none;
+
+  }
+  
+  .menu.open {
+    display: block;
+    height: 93vh;
+    width: 100px;
+    background-color: blue;
+    position: relative;
+    transition: all 0.3s ease;
+  }
+  
+  .menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .menu ul li {
+    padding: 10px;
+  }
+  
+  .menu ul li a {
+    text-decoration: none;
+    color: #000;
+  }
