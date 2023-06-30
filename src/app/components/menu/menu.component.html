@@ -1,14 +1,24 @@
 <div class="menu-container">
     <button (click)="toggleMenu()" class="hamburger-button">
-      <span></span>
-      <span></span>
-      <span></span>
+      <span class="toggle1" [ngClass]="{'open': isOpen}"></span>
+      <span class="toggle2" [ngClass]="{'open': isOpen}"></span>
+      <span class="toggle3" [ngClass]="{'open': isOpen}"></span>
     </button>
+
+
     <div class="menu" [ngClass]="{'open': isOpen}">
-      <ul>
-        <li><a routerLink="/">Home</a></li>
-        <li><a routerLink="/about">About</a></li>
-        <li><a routerLink="/contact">Contact</a></li>
+        <ul>
+          <li><a routerLink="/" [ngClass]="{'active': isCurrentPage('/')}">
+              <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="home"></mat-icon>
+              <a *ngIf="isOpen && isRendered" [ngClass]="{'active': isCurrentPage('/')}">Home</a>
+            </a>
+          </li>
+          <li><a routerLink="/about" [ngClass]="{'active': isCurrentPage('/about')}">
+              <mat-icon> business</mat-icon>
+              <a *ngIf="isOpen && isRendered" [ngClass]="{'active': isCurrentPage('/about')}">About</a>
+            </a>
+          </li>
+
       </ul>
     </div>
   </div>
