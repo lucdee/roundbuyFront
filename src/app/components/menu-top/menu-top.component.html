@@ -1,1 +1,27 @@
-<div class="content"></div>
+<div class="content">
+    <div class="contentMenu">
+<div class="topdiv">
+    <img src="../../../assets/img/logo.jpg"/>
+</div>
+<div class="buttomdiv">
+    <div class="menu" >
+        <ul>
+          <li>
+              <a routerLink="/"  [ngClass]="{'active': isCurrentPage('/register')}">Crie a sua conta</a>
+          </li>
+          <li>
+              <a routerLink="/about" [ngClass]="{'active': isCurrentPage('/login')}">Entre</a>
+          </li>
+          <li>
+            <a>
+                <mat-icon class="icon">shopping_bag</mat-icon>
+        </a>
+        </li>
+
+       
+
+      </ul>
+    </div>
+</div>
+</div>
+</div>
