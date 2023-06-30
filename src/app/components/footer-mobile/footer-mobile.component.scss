@@ -1,0 +1,46 @@
+.footer{
+    width: 100%;
+    background-color: black;
+    position: absolute;
+    top: 95%;
+    position: fixed;
+}
+.menu {
+    display: flex;
+    width: 100%;
+  position: relative;
+    transition: all 0.3s ease;
+    padding: 6px 0;
+}
+  
+  .hamburger-button {
+  background-color: transparent;
+  border: none;
+  padding: 10px;
+  }
+  
+
+  
+        a {
+          color: white;
+    text-decoration: none;
+    display: grid;
+    justify-content: center;
+    height: 80px;
+    font-size: 25px;
+      width: 100%;
+      mat-icon{
+        font-size: 2px;
+      }
+
+  }
+  a.active {
+  color: #1ff6f1;
+  text-decoration: none;
+  /* Defina aqui a cor desejada para a página ativa */
+  }
+  
+  .menutxt {
+  margin-top: 20px;
+  }
+  

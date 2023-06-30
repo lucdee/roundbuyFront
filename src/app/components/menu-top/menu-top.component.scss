@@ -14,9 +14,30 @@
 .topdiv{
   height: 70%;
   width: 100%;
+  display: flex;
+  align-items: center;
+
+  fa-icon{
+    color: white;
+    font-size: 24px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: 20px;
+  }
+
   img{
     height: 100%;
   
+  }
+  h1{
+    font-size: 40px;
+    color: white;
+    padding: 20px;
+    margin-top: 20px;
+    span{
+      color: #1ff6f1;
+    }
+
   }
 }
 
@@ -33,7 +54,7 @@
   width: 100%;
 position: relative;
   transition: all 0.3s ease;
-  justify-content: end;
+  justify-content: center;
 }
 
 .hamburger-button {
@@ -57,13 +78,16 @@ display: flex;
   margin: 0;
   display: flex;
     align-items: flex-start;
-    justify-content: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 20px;
 }
 
 .menu ul li {
 display: flex;
 padding: 10px;
 align-items: flex-start;
+justify-content: space-around;
 }
 
       .menu li a {
