@@ -3,15 +3,15 @@
 <div class="topdiv">
     <img src="../../../assets/img/logo.jpg"/>
     <h1>Round<span>Buy</span></h1>
-    
+
     <fa-icon [icon]="faMagnifyingGlass"></fa-icon>
-    
+
 </div>
 <div class="buttomdiv">
- 
+
     <div class="menu" >
         <ul>
-        
+
             <li>
                 <a routerLink="/anunciar" [ngClass]="{'active': isCurrentPage('/anunciar')}">Anúnciar Round</a>
             </li>
@@ -19,7 +19,7 @@
               <a routerLink="/register"  [ngClass]="{'active': isCurrentPage('/register')}">Crie a sua conta</a>
           </li>
           <li>
-              <a routerLink="/about" [ngClass]="{'active': isCurrentPage('/login')}">Entre</a>
+              <a routerLink="/login" [ngClass]="{'active': isCurrentPage('/login')}">Entre</a>
           </li>
       </ul>
     </div>

@@ -12,6 +12,10 @@ import { FooterMobileComponent } from './components/footer-mobile/footer-mobile.
 import { faFontAwesome } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
+import { ReactiveFormsModule } from '@angular/forms';
+import { LoginComponent } from './pages/login/login.component';
+import { ProfileComponent } from './pages/profile/profile.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,9 +23,12 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     MenuTopComponent,
     FooterMobileComponent,
     FooterMobileComponent,
+    LoginComponent,
+    ProfileComponent,
   ],
   imports: [
     BrowserModule,
+    ReactiveFormsModule,
     AppRoutingModule,
    FontAwesomeModule,
     MatSlideToggleModule,
