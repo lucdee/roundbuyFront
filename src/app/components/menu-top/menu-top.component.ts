@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-import { faAngleLeft, faMagnifyingGlass} from '@fortawesome/free-solid-svg-icons';
+import { faAngleLeft, faMagnifyingGlass, faUserAstronaut, faStore , faCaretDown, faPeopleGroup} from '@fortawesome/free-solid-svg-icons';
+import { faLinkedinIn, faFacebookF , faInstagram } from '@fortawesome/free-brands-svg-icons';
 
 @Component({
   selector: 'app-menu-top',
@@ -10,6 +11,14 @@ import { faAngleLeft, faMagnifyingGlass} from '@fortawesome/free-solid-svg-icons
 export class MenuTopComponent {
   faAngleLeft = faAngleLeft;
   faMagnifyingGlass=faMagnifyingGlass
+  faUserAstronaut=faUserAstronaut
+  faLinkedinIn = faLinkedinIn
+  faFacebookF= faFacebookF
+  faInstagram= faInstagram
+  faStore= faStore
+  faCaretDown=faCaretDown
+  faPeopleGroup=faPeopleGroup
+
 
   constructor(private router: Router) {}
   isCurrentPage(route: string): boolean {
