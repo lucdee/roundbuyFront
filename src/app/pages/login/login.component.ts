@@ -33,8 +33,18 @@ export class LoginComponent {
       return;
     }
 
-    // Aqui você pode obter os dados do formulário usando this.meuFormulario.value
-    const dados = this.meuFormulario.value;
+   
+
+
+    //pegando valores do form
+    const { nome, email } = this.meuFormulario?.value;
+
+
+     // Montando os dados para envio com teste concatenando as 2 variaveis
+     const dados = {
+      email,
+      teste : email + nome
+    }
 
     // Realize a requisição HTTP para enviar os dados
     this.http.post(`URL_DA_API`, dados)
